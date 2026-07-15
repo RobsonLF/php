@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WebNotes</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=collections_bookmark" />
+
   </head>
   <body>
     <!-- =================SIDEBAR================= -->
-      <aside>
-        <div>
-          
+      <aside class="sidebar">
+        <div class="brand mb-4">
+          <span class="material-symbols-outlined">collections_bookmark</span>
+          WebNotes
+          <small>Academic Workspace</small>
         </div>
+
       </aside>  
 
 
