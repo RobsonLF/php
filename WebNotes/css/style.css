@@ -1,18 +1,33 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root{
-    /* Colors */
-    --primary-color: #111844;
-    --secondary-color: #4B5694;
-    --tertiary-color: #7288AE;
-    --quaternary-color: #EAE0CF;
-    /*opção 2
+
+    /* Colors
+    opção 1
     --primary-color: #37353E;
     --secondary-color: #44444E;
     --tertiary-color: #715A5A;
     --quaternary-color: #D3DAD9;
+    
+    opção 2
+    --primary-color: #111844;
+    --secondary-color: #4B5694;
+    --tertiary-color: #7288AE;
+    --quaternary-color: #EAE0CF;
     */
+
+    --bg-menu: #D3DAD9;
+    --bg-body:#44444e9a;
 }
+
+
+
+
+
 /*https://www.fontsquirrel.com/fonts/montserrat
 https://colorhunt.co/palettes/space
 https://www.alura.com.br/artigos/10-tipografias-gratuitas-design-incrivel?utm_term=&utm_campaign=&utm_source=google&utm_medium=cpc&campaign_id=23805973578__&utm_id=23805973578__&hsa_acc=7964138385&hsa_cam=&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=23815806613&gbraid=0AAAAADpqZIBLK7TpHOY6TDChs8ZyvtXGP&gclid=CjwKCAjwvNfSBhBiEiwAyaGMCQ-bEPuvnTaP3jFtIzAhTbvVnvYIvgtHw88omHOPWwXEiGhNZ0Y2ERoCAzwQAvD_BwE
