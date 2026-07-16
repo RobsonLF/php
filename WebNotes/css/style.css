@@ -24,7 +24,9 @@
     --bg-body:#eae0cf15;
     --text-brand :#37353E;
     --text-body:#1c1a2e;
-}
+    --text-dark: #000;
+    --text-selected: #4b3df6;
+}   
 
 body{
     background: var(--bg-body); 
@@ -33,17 +35,12 @@ body{
 }
 
 /*================SIDEBAR================*/
-/*icone*/
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+/*icones*/
+aside a img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
 }
-
-
-
 
 .sidebar{
     background: var(--bg-sidebar);
@@ -71,8 +68,26 @@ body{
     font-weight: 500;
     letter-spacing: .03em;
 }
+.nav-link-custom{
+    color: var(--text-brand);
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: .92rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .15s;
+}   
 
-
+.nav-link-custom:hover{
+    color:var(--text-dark); 
+    background:rgba(255,255,255,.06);
+}
+.nav-link-custom.active{
+    color: var(--text-selected);
+    background: rgba(255,255,255,.06);
+}   
 
 
 /*https://www.fontsquirrel.com/fonts/montserrat
