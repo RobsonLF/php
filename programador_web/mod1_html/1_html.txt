@@ -1,0 +1,17 @@
+Modulo 1 - HTML
+
+Aula 1.6 - Formatação
+
+Títulos pré-definidos
+Tags de títulos
+    h1
+    h2
+    h3
+    h4
+    h5
+
+Tag para quebra de linha
+    br
+Tag Linha separadora
+    hr
+
