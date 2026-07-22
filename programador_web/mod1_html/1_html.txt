@@ -1,17 +1,43 @@
+Plataformas de Estudo
+
+https://www.escolavirtual.gov.br/catalogo
+
+https://moodle.ifrs.edu.br/my/
+
+
 Modulo 1 - HTML
 
 Aula 1.6 - Formatação
 
-Títulos pré-definidos
-Tags de títulos
+* Tags de títulos
     h1
     h2
     h3
     h4
     h5
 
-Tag para quebra de linha
+* Tag para quebra de linha
     br
-Tag Linha separadora
+* Tag Linha separadora
     hr
-
+* Negrito 
+    <b></b>
+* Itálico
+    <i></i>
+* Comentários
+    <!-- Comentários -->
+* Links
+    <a href="destino.html">Link</a>
+    * Parametros
+        *download
+        *href
+        *target: _blank, _parent, _self, _top
+            _blank = em uma nova aba
+            _parent = 
+* Listas
+    *Ordenadas = ol - li
+    *Desordenadas = ul - li
+    *Definição = dl - dt - dd
+        dl - defnition Listas
+        dt - definition title
+        dd - definition data
