@@ -7,8 +7,6 @@ https://moodle.ifrs.edu.br/my/
 
 Modulo 1 - HTML
 
-Aula 1.6 - Formatação
-
 * Tags de títulos
     h1
     h2
@@ -41,3 +39,27 @@ Aula 1.6 - Formatação
         dl - defnition Listas
         dt - definition title
         dd - definition data
+
+* Imagens
+    *<img src="caminho.png">
+    *Parametros: title
+                 alt - alternativa em texto caso a imagem não seja carregada
+                 src - Caminho da imagem
+                 width  - Largura
+                 heigth - altura
+* Audios
+    *<audio src="caminho.mp3" controls></audio>
+    *Parametros: controls
+                 src
+                 autoplay
+                 loop
+                 muted
+                 preload
+                 width
+
+* Novas Funcionalidades HTML5
+    *Details
+    *meters - barra de progresso
+    *progress - barra de carregamento
+    
+
