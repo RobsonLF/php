@@ -21,11 +21,11 @@
     */
 
     --bg-sidebar: #F6F3F4;
-    --bg-body:#eae0cf15;
+    --bg-body:#FCF8F9;
     --text-brand :#37353E;
     --text-body:#1c1a2e;
     --text-dark: #000;
-    --text-selected: #4b3df6;
+    --text-selected: #15157D;
 }   
 
 body{
@@ -36,6 +36,29 @@ body{
 
 /*================SIDEBAR================*/
 /*icones*/
+
+
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+
 aside a img{
     width: 32px;
     height: 32px;
@@ -78,6 +101,7 @@ aside a img{
     align-items: center;
     gap: 10px;
     transition: .15s;
+    
 }   
 
 .nav-link-custom:hover{
@@ -87,6 +111,7 @@ aside a img{
 .nav-link-custom.active{
     color: var(--text-selected);
     background: rgba(255,255,255,.06);
+    font-weight: 600;
 }   
 
 
