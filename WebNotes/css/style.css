@@ -103,7 +103,6 @@ aside a img{
     transition: .15s;
     
 }   
-
 .nav-link-custom:hover{
     color:var(--text-dark); 
     background:rgba(255,255,255,.06);
@@ -112,11 +111,27 @@ aside a img{
     color: var(--text-selected);
     background: rgba(255,255,255,.06);
     font-weight: 600;
+}
+.sidebar-footer{
+    margin-top: auto;
+    border-top: 1px solid rgba(225,225,225,.08);
+    padding-top: 14px;
 }   
-
 .btn-new-note{
     background: var(--text-selected);
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
 }
+.btn-new-note:hover{
+    background: #3c30d6;
+    color: #fff;
+}
+
+
+
 
 /*https://www.fontsquirrel.com/fonts/montserrat
 https://colorhunt.co/palettes/space
