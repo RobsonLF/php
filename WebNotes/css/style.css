@@ -114,6 +114,9 @@ aside a img{
     font-weight: 600;
 }   
 
+.btn-new-note{
+    background: var(--text-selected);
+}
 
 /*https://www.fontsquirrel.com/fonts/montserrat
 https://colorhunt.co/palettes/space
