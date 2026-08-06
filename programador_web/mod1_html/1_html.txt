@@ -62,4 +62,11 @@ Modulo 1 - HTML
     *meters - barra de progresso
     *progress - barra de carregamento
     
-
+* Tabelas
+    *Parametros - colspan
+                - rowspan
+    <table>
+        <tr> -->table row
+            <td></td> -->table data
+        </tr>
+    </table
