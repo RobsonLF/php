@@ -163,7 +163,6 @@ aside a img{
 /*---------main content-----------*/
 .main-content{
     margin-left: 250px;
-    width: 50vw;
 }
 .welcome{
     padding: 30px 0px 0px 30px;
@@ -182,7 +181,7 @@ aside a img{
 .stat{
     padding: 0 30px 0 30px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     
 
 }
@@ -193,7 +192,7 @@ aside a img{
     padding: 18px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 10px;
     width: 100%;
     max-width: 350px;
