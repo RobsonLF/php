@@ -21,11 +21,13 @@
     */
 
     --bg-sidebar: #F6F3F4;
+    --bg-topbar:#fff;
     --bg-body:#FCF8F9;
     --text-brand :#37353E;
     --text-body:#1c1a2e;
     --text-dark: #000;
     --text-selected: #15157D;
+    --card-border:#eceafb;
 }   
 
 body{
@@ -130,8 +132,104 @@ aside a img{
     color: #fff;
 }
 
+.topbar{
+    background: var(--bg-body);
+    width: 100%;
+    max-width: none;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--card-border);
+}
+.top-tab{
+    color:var(--text-brand);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding:0px 4px;
+    
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.top-tab.active{
+    color: var(--text-selected);
+    font-weight: 600;
+    border-bottom: 2px solid var(--text-selected);
+}
+.text-end{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid var(--card-border);
+}
+/*---------main content-----------*/
+.main-content{
+    margin-left: 250px;
+    width: 50vw;
+}
+.welcome{
+    padding: 30px 0px 0px 30px;
+}
+.welcome-title{
+    font-family:'inter', serif;
+    font-style:italic;
+    font-weight: 500;
+    color: var(--text-selected);
+}
+.welcome-sub{
+    font-family:'inter', serif;
+    color:var(--text-brand);
+    font-size: .9rem;
+}
+.stat{
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: center;
+    
 
+}
+.stat-card{
+    background:var(--bg-topbar);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 110px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
+.last-stat-card{
+    margin-right: auto;
+}
+.stat-icon{
+    width:44px;
+    height:44px;
+    border-radius: 12px;
+    background:#eeecfd;
+    color: var(--text-selected);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.stat-label{
+    font-size: .7rem;
+    color: var(--text-brand);
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+.stat-value{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-selected);
+    padding-bottom: 3px;
+    font-family: 'Montserrat', serif;
+}
 
 /*https://www.fontsquirrel.com/fonts/montserrat
 https://colorhunt.co/palettes/space
