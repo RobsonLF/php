@@ -39,16 +39,15 @@ global $conexao;
                                 <!-- Dados dos usuários serão inseridos aqui -->
                                 <?php
                                     $sql = "SELECT * FROM userdata";
-                                    $resultado = mysqli_query($conexao, $sql);
-                                    if(mysqli_num_rows($resultado) > 0){
-                                        foreach($resultado as $usuario){
-                                            
+                                    $resultados = mysqli_query($conexao, $sql);
+                                    if(mysqli_num_rows($resultados) > 0){
+                                        foreach($resultados as $usuario) {                                            
                                 ?>
                                  <tr>
-                                    <td>1</td>
-                                    <td>João Silva</td>
-                                    <td>teste@gmeil.com</td>
-                                    <td>123456</td>
+                                    <td><?= $usuario['id']?></td>
+                                    <td><?= $usuario['username']?></td>
+                                    <td><?= $usuario['email']?></td>
+                                    <td><?= $usuario['userpassword']?></td>
                                     <td>
                                         <a href="" class="btn btn-secondary btn-sm">Visualizar</a>
                                         <a href="" class="btn btn-success btn-sm">Editar</a>
@@ -58,6 +57,7 @@ global $conexao;
                                     </td>
                                  </tr>
                                 <?php
+                                    }
                                     } else {
                                         echo '<h5>Nenhum usuário encontrado</h5>';
                                     }
@@ -71,4 +71,4 @@ global $conexao;
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
-</html>
+</html>=
