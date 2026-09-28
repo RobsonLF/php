@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+
+    /* Colors
+    opção 1
+    --primary-color: #37353E;
+    --secondary-color: #44444E;
+    --tertiary-color: #715A5A;
+    --quaternary-color: #D3DAD9;
+    
+    opção 2
+    --primary-color: #111844;
+    --secondary-color: #4B5694;
+    --tertiary-color: #7288AE;
+    --quaternary-color: #EAE0CF;
+    */
+
+    --bg-sidebar: #F6F3F4;
+    --bg-topbar:#fff;
+    --bg-body:#FCF8F9;
+    --text-brand :#37353E;
+    --text-body:#1c1a2e;
+    --text-dark: #000;
+    --text-selected: #15157D;
+    --card-border:#eceafb;
+}   
+
+body{
+    background: var(--bg-body); 
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+/*================SIDEBAR================*/
+/*icones*/
+
+
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+
+aside a img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.sidebar{
+    background: var(--bg-sidebar);
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 18px;
+}
+
+.brand{
+    color: var(--text-brand);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;  
+    font-weight: 700;
+}
+.brand small{
+    display: block;
+    color:var(--text-brand);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: .03em;
+}
+.nav-link-custom{
+    color: var(--text-brand);
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: .92rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .15s;
+    
+}   
+.nav-link-custom:hover{
+    color:var(--text-dark); 
+    background:rgba(255,255,255,.06);
+}
+.nav-link-custom.active{
+    color: var(--text-selected);
+    background: rgba(255,255,255,.06);
+    font-weight: 600;
+}
+.sidebar-footer{
+    margin-top: auto;
+    border-top: 1px solid rgba(225,225,225,.08);
+    padding-top: 14px;
+}   
+.btn-new-note{
+    background: var(--text-selected);
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+}
+.btn-new-note:hover{
+    background: #3c30d6;
+    color: #fff;
+}
+
+.topbar{
+    background: var(--bg-body);
+    width: 100%;
+    max-width: none;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--card-border);
+}
+.top-tab{
+    color:var(--text-brand);
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding:0px 4px;
+    
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.top-tab.active{
+    color: var(--text-selected);
+    font-weight: 600;
+    border-bottom: 2px solid var(--text-selected);
+}
+.text-end{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid var(--card-border);
+}
+/*---------main content-----------*/
+.main-content{
+    margin-left: 250px;
+}
+.welcome{
+    padding: 30px 0px 0px 30px;
+}
+.welcome-title{
+    font-family:'inter', serif;
+    font-style:italic;
+    font-weight: 500;
+    color: var(--text-selected);
+}
+.welcome-sub{
+    font-family:'inter', serif;
+    color:var(--text-brand);
+    font-size: .9rem;
+}
+.stat{
+    padding: 0 30px 0 30px;
+    display: flex;
+    justify-content: left;
+    
+
+}
+.stat-card{
+    background:var(--bg-topbar);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 110px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.last-stat-card{
+    margin-right: auto;
+}
+.stat-icon{
+    width:44px;
+    height:44px;
+    border-radius: 12px;
+    background:#eeecfd;
+    color: var(--text-selected);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.stat-label{
+    font-size: .7rem;
+    color: var(--text-brand);
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+.stat-value{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-selected);
+    padding-bottom: 3px;
+    font-family: 'Montserrat', serif;
+}
+
+/*https://www.fontsquirrel.com/fonts/montserrat
+https://colorhunt.co/palettes/space
+https://www.alura.com.br/artigos/10-tipografias-gratuitas-design-incrivel?utm_term=&utm_campaign=&utm_source=google&utm_medium=cpc&campaign_id=23805973578__&utm_id=23805973578__&hsa_acc=7964138385&hsa_cam=&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=23815806613&gbraid=0AAAAADpqZIBLK7TpHOY6TDChs8ZyvtXGP&gclid=CjwKCAjwvNfSBhBiEiwAyaGMCQ-bEPuvnTaP3jFtIzAhTbvVnvYIvgtHw88omHOPWwXEiGhNZ0Y2ERoCAzwQAvD_BwE
+*/
+
