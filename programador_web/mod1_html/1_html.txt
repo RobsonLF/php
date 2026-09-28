@@ -70,3 +70,25 @@ Modulo 1 - HTML
             <td></td> -->table data
         </tr>
     </table
+
+* Media Query
+
+    * Computadores       = +1024
+    * Tablets            = 1023-768
+    * Celulares paisagem = 767 - 480
+    * Celular retrato    = -479
+
+    Estrutura Media Query
+    body{
+        background: blue;
+    }
+    @media screen and (max-width: 600px){
+        body{
+            background:#fff
+        }
+    }
+    @media screen and (min-width: 900px){
+        body{
+            background: dark-gray;
+        }
+    }
