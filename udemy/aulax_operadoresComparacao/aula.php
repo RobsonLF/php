@@ -28,4 +28,25 @@ echo "<br>";
 var_dump($a <=> $b); //operador de comparação de diferença e tipo
 //retorna 1 se o valor da esquerda for maior, -1 se o valor da direita for maior e 0 se forem iguais
 
+$x = null;
+$y = 20;
+$z = 10;
+
+echo $x ?? $y ?? $z; //operador de coalescência nula
+
+//operadores de incremento e decremento
+$numero = 10;
+
+echo $numero++; //operador de incremento pós-fixado
+echo "<br>";
+echo ++$numero; //operador de incremento pré-fixado
+echo "<br>";
+echo $numero--; //operador de decremento pós-fixado
+echo "<br>";
+echo --$numero; //operador de decremento pré-fixado
+
+
+$resultado = 10 + 20 / 5; //operador de comparação de diferença e tipo
+echo "<br>";
+echo $resultado;    
 ?>
